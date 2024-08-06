@@ -205,7 +205,7 @@ SIMPLE_JWT = {
 #     "http://localhost:3000", 
 # ]
 
-CORS_ALLOW_ALL_ORIGINS = True
+# CORS_ALLOW_ALL_ORIGINS = True
 
 CSRF_TRUSTED_ORIGINS = [
     'https://hatio.toeman.online',
