@@ -70,17 +70,28 @@ WSGI_APPLICATION = 'backend.wsgi.application'
 # }
 
 
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'django.db.backends.postgresql',
+#         'NAME': 'Hatio',
+#         'USER': 'postgres',
+#         'PASSWORD': '1234',
+#         'HOST':'localhost',
+#         'PORT': '5432'
+#     }
+# }
+
+
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'Hatio',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST':'localhost',
-        'PORT': '5432'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'myproject',
+        'USER': 'myprojectuser',
+        'PASSWORD': 'password',
+        'HOST': 'localhost',
+        'PORT': '',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/5.0/ref/settings/#auth-password-validators
@@ -120,6 +131,7 @@ STATIC_URL = 'static/'
 
 
 import os
+STATIC_ROOT = os.path.join(BASE_DIR, 'static/')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
