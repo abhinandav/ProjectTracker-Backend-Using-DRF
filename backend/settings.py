@@ -207,6 +207,10 @@ SIMPLE_JWT = {
 
 CORS_ALLOW_ALL_ORIGINS = True
 
+CSRF_TRUSTED_ORIGINS = [
+    'https://hatio.toeman.online',
+]
+
 AUTH_USER_MODEL = 'user.User'
 
 
